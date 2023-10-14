@@ -69,7 +69,7 @@ class Database:
       else:
         return temp
    def get_all_trades(self):
-      q = "SELET * FROM trades"
+      q = "SELECT * FROM trades"
       result = self.sql.execute(q)
       result = result.fetchall()
       return result
